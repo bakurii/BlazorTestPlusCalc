@@ -1,0 +1,38 @@
+﻿@page "/testpage"
+
+@*This page counts numbers the user has given to the textboxes.*@
+
+<body class="bestbody">
+     <div class="testflex">
+        <div class="bestpage">
+            <h3 class="pageh3">Test Page Best Page</h3>
+            <h4 class="item1">Welcome!</h4>
+
+            <input class="item1" type="text" placeholder="number1 plz" @bind="num1" /><br />
+            <input class="item1" type="text" placeholder="number2 plz" @bind="num2" />
+
+            <p class="item1">Number is: @plusNum</p>
+
+            <button class="bestbtn" @onclick="@CountNumbers">Count</button>
+            <button class="bestbtn" @onclick="@ClearNum">Clear</button>
+        </div>
+    </div>
+</body>
+
+@code {
+    public int num1 { get; set; }
+    public int num2 { get; set; }
+    public int plusNum { get; set; }
+
+    void CountNumbers()
+    {
+        plusNum = num1 + num2;
+    }
+
+    void ClearNum()
+    {
+        num1 = 0;
+        num2 = 0;
+        plusNum = 0;
+    }
+}

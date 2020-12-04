@@ -1,0 +1,39 @@
+﻿
+.testflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bestpage {
+    align-content: center;
+    
+}
+
+.pageh3 {
+    color: darkgoldenrod;
+    font-family: 'Global Monospace';
+    margin: 10px;
+}
+
+.item1 {
+    margin: 10px;
+}
+
+.bestbtn {
+    box-shadow: 0px -1px 40px 5px #edc113;
+    background: linear-gradient(to bottom, #f0d458 5%, #917e34 100%);
+    background-color: #f0d458;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 2px #59490b;
+    margin: 10px;
+}
